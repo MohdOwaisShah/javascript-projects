@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #3D0000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#type-list{
+    font-size: 1.3vw;
+    padding: 5px 13px 5px 12px;
+    width: 30vw;
+    border: 1px solid #FF0000;
+    margin-top: 55px;
+    border-radius: 5px;
+    background-color: #950101;
+    outline: none;
+    color: #EEEEEE;
+    margin-right: 5px;
+}
+
+#add{
+    font-size: 1.2vw;
+    padding: 5px 13px 5px 12px;
+    border-radius: 5px;
+    color: #EEEEEE;
+    border: 1px solid #FF0000;
+    cursor: pointer;
+    background-color: #3D0000;
+    transition: all 0.2s ease;
+}
+#add:hover{
+    color: #3D0000;
+    background-color: #EEEEEE;
+    border: 1px solid #3D0000;
+}
+
+li{
+    color: #EEEEEE;
+    font-size: 2vw;
+
+}
+
+#remove{
+    font-size: 1.2vw;
+    padding: 5px 13px 5px 12px;
+    border-radius: 5px;
+    color: #EEEEEE;
+    border: 1px solid #FF0000;
+    cursor: pointer;
+    background-color: #3D0000;
+    transition: all 0.2s ease;
+}
+
+#remove:hover{
+    color: #3D0000;
+    background-color: #EEEEEE;
+    border: 1px solid #3D0000;
+}
+
+.item{
+    display: flex;
+    gap: 50px;
+    margin: 2vw 0;
+}
