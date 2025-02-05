@@ -69,7 +69,7 @@ addBtn.addEventListener("click", (e) => {
     typeList.focus();
 })
 
-//displaying items which have in local storage
+//displaying items which store in local storage
 arr = JSON.parse(localStorage.getItem("item")) || [];
 console.log(arr);
 arr.forEach((curElem) => {
