@@ -28,13 +28,6 @@ const removeItems = (div, user) => {
         e.preventDefault();
         console.log(e.target.parentElement.firstChild.innerText);
         let clickValue = e.target.parentElement.firstChild.innerText;
-        // removing items from local storage
-
-        // arr = arr.filter((currElem) => {
-        //     currElem !== user;
-        //     console.log(arr);
-        // })
-        console.log(user);
 
         if (clickValue == user) {
             div.remove()
@@ -42,7 +35,6 @@ const removeItems = (div, user) => {
             arr = arr.filter((curElem) => {
                 return curElem !== clickValue;
             })
-            console.log(arr);
         }
         localStorage.setItem("item", JSON.stringify(arr))
     })
